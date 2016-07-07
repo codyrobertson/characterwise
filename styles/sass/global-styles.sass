@@ -1,9 +1,17 @@
 @import "bourbon/bourbon"
 @import "animate-sass/animate"
-@import "foundation"
-@import "foundation"
-@include foundation-global-styles
-@include foundation-grid
-@include foundation-typography
-@include foundation-button
-@include foundation-forms
+@import "bootstrap"
+@import "bootstrap-sass/bootstrap"
+
+::Sass::Script::Value::Number.precision = [8, ::Sass::Script::Value::Number.precision].max
+
+[
+  "Android 2.3",
+  "Android >= 4",
+  "Chrome >= 20",
+  "Firefox >= 24",
+  "Explorer >= 8",
+  "iOS >= 6",
+  "Opera >= 12",
+  "Safari >= 6"
+]
