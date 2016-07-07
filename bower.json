@@ -1,10 +1,15 @@
 {
-  "name": "Characterwise",
+  "name": "characterwise",
   "version": "0.0.1",
   "dependencies": {
-    "sass-bootstrap": "~3.0.0",
+    "foundation-sites": "~3.0.0",
     "modernizr": "~2.6.2",
-    "jquery": "~1.10.2"
+    "jquery": "~1.10.2",
+    "animate-sass": "0.6.6",
+    "magnific-popup": "~1.10.2",
+    "animate-transition": "~1.10",
+    "svg-loaders": ""
+
   },
   "private": true
 }
