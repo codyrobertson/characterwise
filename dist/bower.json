@@ -1,6 +1,7 @@
 {
   "name": "characterwise",
   "version": "0.0.1",
+  "branch": "gh-pages",
   "dependencies": {
     "bootstrap-sass": "~3.3.6",
     "modernizr": "~2.6.2",
