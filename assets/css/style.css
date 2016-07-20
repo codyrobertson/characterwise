@@ -463,7 +463,6 @@ ul.navbar-nav:hover {
 }
 .navbar-inverse ul.navbar-nav li a {
     color: white;
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 .navbar-inverse ul.navbar-nav li a:hover {
