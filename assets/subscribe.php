@@ -8,7 +8,7 @@ function isEmail($email) {
 if($_POST) {
 
     // Enter the email where you want to receive the notification when someone subscribes
-    $emailTo = 'contact.azmind@gmail.com';
+    $emailTo = 'digitalcody@gmail.com';
 
     $subscriber_email = addslashes(trim($_POST['email']));
 
@@ -16,7 +16,7 @@ if($_POST) {
         $array = array( 'valid' => 0, 'message' => 'Insert a valid email address!' );
         echo json_encode($array);
     }
-    else {        
+    else {
         $array = array( 'valid' => 1, 'message' => 'Thanks for your subscription!' );
         echo json_encode($array);
 
