@@ -1,31 +1,363 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
-    <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-    <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-    <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-    <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <html class="no-js" lang="en">
-    <!--<![endif]-->
-    <title>Characterwise--Character Building Made Simple</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!---Main dependencies located in dist/bower_components-->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="dist/bower_components/foundation-sites/vendor/assets/javascripts/foundation/jquery.foundation.alerts.js"></script>
-    <script src="dist/bower_components/foundation-sites/vendor/assets/javascripts/foundation/jquery.foundation.buttons.js"></script>
-    <script src="dist/bower_components/foundation-sites/vendor/assets/javascripts/foundation/jquery.foundation.forms.js"></script>
-    <!-- IE Fix for HTML5 Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Characterwise &mdash; Character Building Made Simple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Characterwise makes building, measuring, and teaching character easy." />
+    <meta name="keywords" content="character building, lorem, ipsum, sit, dolor, amet plubris, unium" />
+    <meta name="author" content="Characterwise" />
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
 </head>
 
 <body>
+
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-img"></div>
+    </div>
+
+
+
+    <!-- Top menu -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar black"></span>
+                    <span class="icon-bar black"></span>
+                    <span class="icon-bar black"></span>
+                </button>
+                <a class="navbar-brand " href="index.html"><img id="logo" src="assets/img/Logo_Long/White/longW.png" alt="Characterwise Logo" /></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="top-navbar-1">
+                <ul class="nav navbar-nav navbar-right" id="link">
+                    <li><a class="scroll-link" href="#top-content">Top</a></li>
+                    <li><a class="scroll-link" href="#h-chapter">Highlighted</a></li>
+                    <li><a class="scroll-link" href="#subscribe">Subscribe</a></li>
+                    <li><a class="scroll-link" href="#v-review">Review</a></li>
+                    <li><a class="scroll-link" href="#about">Author</a></li>
+                    <li><a class="scroll-link" href="#about"><span class="btn btn-primary" id="buy"> Get Access Now </span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Top content -->
+    <div class="top-content">
+
+        <div class="inner-bg">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-5 ebook">
+                        <!--This is the Home Book -->
+                        <img src="assets/img/cw_book.png" class="book floating" alt="CW-Ebook">
+                    </div>
+                    <!--Home CTA Start -->
+                    <div class="col-sm-7 text" style="text-align: left !important;">
+                        <h1 class="wow fadeInBig">
+                            Improving your Character will improve your life
+                            <!--Possible CTA TEXT
+                            *Current*Characterwise will make it easier than ever to build character.
+                            *Strong Character - Good Character
+                            *Building strong character. Building strong character one person at a time.
+                            *Strong Character Leads to a Better Life
+                            *A Character Framework that will change your life
+                          -->
+                            </h1>
+                        <div class="text-med description wow fadeInBig white" style="text-align: left !important;">
+                            <p class="white" id="p-left">
+                                Characterwise builds strong character in individuals who embed it in daily routines to experience a better life at home, at school and at work. These strong character traits are taught and measured through resources, education and tools.
+                                <!--  The goal of the Framework that we are proposing is: to transform one’s self, one’s family, one’s team/organization/company, and one’s society. -->
+                            </p>
+                        </div>
+                        <!--Home CTA ###END### -->
+                        <div class="text wow fadeInUp animated pulse">
+                            <a class="btn btn-link-1 cta-btn scroll-link" href="#about">
+                                <!--Button CTA -->
+                                <i class="fa fa-book"></i> See How You Can Improve your life</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container header-cta" style="height: inherit;">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 items">
+                <div class="col-sm-12 text" style="padding-top: 30px;">
+                    <p class="cta-text text-center"> Get inspired and start changing your life Today.</p>
+                    <p class="cta-text-sub text-center"> <strong> This Change Starts With Character—Ends With You </strong></p>
+                    <div class="input-group" style="padding-bottom: 10px;">
+                        <input type="text" class="form-control cta-form" placeholder="Enter your Email">
+                        <span class="input-group-btn">
+                            <button class="btn btn-info"type="button"> Submit</button>
+                          </span>
+                    </div>
+                </div>
+                <p style="padding-bottom: 30px;" class="cta-eula text-center"> By Signing up you agree with the Characterwise EULA</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Chapters -->
+    <!-- Options For H2
+
+    *In Current*
+    <h2>What makes Characterwise Amazing</h2>
+
+    <h2> Characterwise is unlike anything out there</h2>
+    <h2>What makes Characterwise Amazing</h2>
+    <h2>What makes Characterwise Amazing</h2>
+    <h2>What makes Characterwise Amazing</h2>
+    <h2>What makes Characterwise Amazing</h2>
+    -->
+    <div class="chapters-container section-container-gray-bg" id="about" style="height: inherit; padding-bottom: 30px !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 chapters section-description wow fadeIn">
+                    <h2>Characterwise is unlike anything out there</h2>
+                    <span class="about-des"> Chararacterwise's appeal doesn't just to stop the moment you put down the book. <br>
+                      The goal of the framework that we are proposing is: to transform one’s self, one’s family, one’s team/organization/company, and one’s society.</span>
+                    <div class="divider-1 wow fadeInUp"><span></span></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 chapters-box wow fadeInLeft" style="padding-bottom: 30px !important;">
+                    <div class="row">
+                        <div class="col-sm-3 chapters-box-icon">
+                            <img src="assets/img/Colored/iconColor_humanity@2x.png" height="50px"></img>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Accesible For Anyone, Anywhere</h3>
+                            <p>
+                                Characterwise is written in such a way that anyone of any ethnic, social or educational background can pick up one of our materials and start improving thier life right away.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 chapters-box wow fadeInLeft">
+                    <div class="row">
+                        <div class="col-sm-3 chapters-box-icon">
+                            <img src="assets/img/7+1-img.png" height="50px"></img>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Our Framework is designed with "you" in mind</h3>
+                            <p>
+                                The 7+1 Character Framework embodies the core characteristics that comprise what we call “Strong Character” in an individual These characteristics are research-backed, teachable characteristics which are most advantageous to individual success.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 chapters-box wow fadeInLeft">
+                    <div class="row">
+                        <div class="col-sm-3 chapters-box-icon">
+                            <img src="assets/img/books.png" height="70px" width="auto"></img>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Our material is suited for all areas of development</h3>
+                            <p>
+                                Characterwise isn't set on just solving one area's problem. We belive that character development shouln't stop at, (Education, Corporations, or Personal Development). We developed our 7+1 Framework to be open and adaptable, because of this we have tailored
+                                materials/books for a multitude of areas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 chapters-box wow fadeInLeft">
+                    <div class="row">
+                        <div class="col-sm-3 chapters-box-icon">
+                            <img src="assets/img/bmt.png" height="50px"></img>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Build, Measure, and Teach Character</h3>
+                            <p>
+                                Traditionally, character has been tough to nail dowm, and even tougher to objectively analyze. However, at Characterwise—we our 7+1 character framework is comprised of well tested characteristics. These characteristics are research-backed, teachable,
+                                buildable, and measurable characteristics which are most advantageous to individual success.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Subscription form -->
+    <div class="subscribe-container section-container" id="call-to-action">
+        <div class="container">
+            <!-- Call to Action Text -->
+            <div class="row">
+                <div class="col-sm-12 chapters section-description wow fadeIn">
+                    <h2>Sign Up For Early Access to Characterwise—Win Some Goodies</h2>
+                    <span class="about-des"> Chararacterwise's appeal doesn't just to stop the moment you put down the book. <br>
+                    The goal of the framework that we are proposing is: to transform one’s self, one’s family, one’s team/organization/company, and one’s society.</span>
+                    <div class="divider-1 wow fadeInUp"><span></span></div>
+                </div>
+            </div>
+            <!-- ###END Call to Action Text ###-->
+
+            <div class="row">
+                <div class="col-sm-5 about-box-img wow fadeInLeft">
+                    <img src="assets/img/books.jpg" class="books-fl" alt="author" data-at2x="assets/img/about/1.jpg">
+                </div>
+                <div class="col-sm-6 col-sm-offset-1 about-box-text wow fadeInUp">
+                    <h3>What You Will Get</h3>
+                    <p class="medium-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.
+                    </p>
+
+                    <!-- Subscribe Form -->
+                    <div class="col-sm-12 subscribe wow fadeInUp">
+                        <form class="form-inline" role="form" action="assets/subscribe.php" method="post">
+                            <div class="form-group">
+                                <label class="sr-only" for="subscribe-email">Email address</label>
+                                <input type="text" name="email" placeholder="Enter your email..." class="subscribe-email form-control" id="subscribe-email">
+                            </div>
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                        <div class="success-message"></div>
+                        <div class="error-message"></div>
+                    </div>
+                </div>
+                <!---###END Subscribe Form ##-->
+
+
+            <!-- Sub Reset Code
+            <div class="row">
+                <div class="col-sm-12 subscribe wow fadeInUp">
+                    <form class="form-inline" role="form" action="assets/subscribe.php" method="post">
+                        <div class="form-group">
+                            <label class="sr-only" for="subscribe-email">Email address</label>
+                            <input type="text" name="email" placeholder="Enter your email..." class="subscribe-email form-control" id="subscribe-email">
+                        </div>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                    <div class="success-message"></div>
+                    <div class="error-message"></div>
+                </div>
+            </div>
+            ###END Reset Code ###-->
+
+        </div>
+    </div>
+    </div>
+
+    <!-- About the author
+    <div class="about-container section-container section-container-gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 about section-description wow fadeIn">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 about-box-img wow fadeInLeft">
+                    <img src="assets/img/books.jpg" class="books-fl" alt="author" data-at2x="assets/img/about/1.jpg">
+                </div>
+                <div class="col-sm-6 col-sm-offset-1 about-box-text wow fadeInUp">
+                    <h3>About the author.</h3>
+                    <p class="medium-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, <span class="colored-text">consectetur adipisicing</span> elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam.
+                    </p>
+                    <p class="about-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  -->
+    <!-- Footer -->
+    <footer class="section-container-gray-bg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                    <div class="footer-copyright">
+                        &copy; Copyright (c) 2016 Characterwise.org All Rights Reserved.</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/retina-1.1.0.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
 
 </body>
 
