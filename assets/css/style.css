@@ -457,7 +457,9 @@ ul.navbar-nav {
 ul.navbar-nav:hover {
     color: #4AE3B5;
 }
-
+.navbar-header{
+    padding-top: -100px;
+}
 
 #link {
     color: green !important;
