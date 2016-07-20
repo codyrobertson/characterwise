@@ -202,6 +202,11 @@ p.cta-text{
   font-family: "Lato", Helvetica, sans-serif;
 }
 
+.black{
+     color: rgb(21, 25, 29);
+}
+
+
 /***** Loader *****/
 
 .loader {
@@ -455,6 +460,10 @@ ul.navbar-nav {
     font-size: 15px;
     color: white;
 }
+
+.navbar{
+    position: static !important;
+}
 ul.navbar-nav:hover {
     color: #4AE3B5;
 }
@@ -494,6 +503,9 @@ ul.navbar-nav:hover {
     height: 40px;
     width: inherit;
     text-indent: -99999px;
+    margin-bottom: 19px;
+    padding-bottom: 2px;
+
 }
 .navbar>.container .navbar-brand {
     margin-left: 0;
