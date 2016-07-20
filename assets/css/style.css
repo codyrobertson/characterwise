@@ -72,6 +72,10 @@ html{
   text-rendering:optimizeSpeed !global;
   text-rendering: optimizeLegibility !global;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     font-family: "TisaPro", Georgia, serif;
