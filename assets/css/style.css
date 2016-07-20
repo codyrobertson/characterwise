@@ -159,7 +159,7 @@ h4 {
 }
 
 .buy.toggle{
-  background-color: #4dbea7;
+  background-color:RGB(216, 218, 225);
   border-bottom: 2px #409d8a solid;
   border-top: none;
   border-left: none;
@@ -495,9 +495,12 @@ ul.navbar-nav:hover {
 .navbar-toggle {
     margin-top: 13px;
     margin-bottom: 13px;
-    color: RGB(77, 190, 167) !important;
     background: RGB(100, 76, 120);
     border: none;
+}
+
+.navbar-toggle span{
+    background-color: white;
 }
 .navbar-brand img {
     height: 40px;
