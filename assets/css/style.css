@@ -416,7 +416,7 @@ width: 100%;
 /***** Top menu *****/
 
 .navbar {
-    margin-top: -20px;
+    margin-top: -50px!important;
     background: rgb(255, 255, 255);
     color: white !important;
     border: 0;
