@@ -416,6 +416,7 @@ width: 100%;
 /***** Top menu *****/
 
 .navbar {
+    margin-bottom: 0;
     background: rgb(255, 255, 255);
     color: white !important;
     border: 0;
@@ -457,16 +458,13 @@ ul.navbar-nav {
 ul.navbar-nav:hover {
     color: #4AE3B5;
 }
-.navbar-header{
-    padding-top: -100px;
-}
-
 #link {
     color: green !important;
 }
 .navbar-inverse ul.navbar-nav li a {
     color: white;
-
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .navbar-inverse ul.navbar-nav li a:hover {
     color: #4AE3B5;
